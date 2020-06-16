@@ -1,6 +1,6 @@
-## Code
+## React count
 
-Increment/Decrement button
+Increment/Decrement button using javascript components of React
 
 ## Objective
 

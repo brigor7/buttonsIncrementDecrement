@@ -2,36 +2,23 @@ import React, { Component } from 'react';
 import IncrementButton from './IncrementButton';
 import DecrementButton from './DecrementButton';
 import Value from './Value';
-import css from './counter.module.css';
 import Steps from './Steps';
+import css from './counter.module.css';
 
 export default class CounterShared extends Component {
-  constructor() {
-    super();
-
-    this.state = {
-      currentCounter: 2,
-      steps: 0,
-    };
-  }
+  /**State of component are in APP.js */
 
   handleButtonClick = (clickType) => {
-    const { currentCounter, steps } = this.state;
-    this.setState({
-      currentCounter:
-        clickType === '+' ? currentCounter + 1 : currentCounter - 1,
-      steps: steps + 1,
-    });
+    this.props.onCount(clickType);
   };
-
   render() {
-    const { currentCounter, steps } = this.state;
+    const { countValue, countSteps } = this.props;
     return (
       <div className={css.counterContainer}>
         <DecrementButton onDecrement={this.handleButtonClick} />
-        <Value value={currentCounter} />
+        <Value value={countValue} />
         <IncrementButton onIncrement={this.handleButtonClick} />
-        <Steps currentSteps={steps} />
+        <Steps currentSteps={countSteps} />
       </div>
     );
   }
