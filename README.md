@@ -4,7 +4,10 @@ Increment/Decrement button
 
 ## Objective
 
-In the code you find the implementation in the buttons for increment or decrement a value, adding steps value. They were constructed with independent components, using technology javascript components react.
+In the code you find the implementation in the buttons for increment or decrement a value, adding steps value. They were constructed with two parts using technology javascript components react:
+
+- Counter components with independent state (Independent state ).
+- Counter componentes with shared state (shared state).
 
 ## Technologies
 
