@@ -30,4 +30,4 @@ You will also see any lint errors in the console.
 
 ## View Page
 
-![](https://github.com/brigor7/buttonsIncrementDecrement/review.jpg);
+![](https://github.com/brigor7/buttonsIncrementDecrement/blob/master/review.jpg);
